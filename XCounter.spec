@@ -4,10 +4,10 @@ Name:		XCounter
 Version:	1.0.6
 Release:	1
 License:	GPL v2
-Group:		Networking
-Source0:	http://freshmeat.net/redir/xcounter/11865/url_tgz/%{name}-%{version}.tar.gz
+Group:		Applications/Networking
+Source0:	http://isp.od.ua/~rsi/%{name}-%{version}.tar.gz
 Patch0:		%{name}-make.patch
-URL:		http://freshmeat.net/redir/xcounter/11865/url_homepage/
+URL:		http://members.fortunecity.com/mrsi/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,7 +27,9 @@ obci±¿enie na wybranym interfejsie.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 %{__make} install \
         BINDIR=$RPM_BUILD_ROOT%{_bindir}
 
@@ -39,3 +41,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
+%attr(755,root,root) %{_bindir}/*
