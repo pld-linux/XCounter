@@ -1,0 +1,24 @@
+diff -ruN XCounter-1.0.6/Makefile XCounter-1.0.6-stare/Makefile
+--- XCounter-1.0.6/Makefile	Sun May  5 07:43:53 2002
++++ XCounter-1.0.6-stare/Makefile	Mon May  6 13:26:16 2002
+@@ -3,7 +3,7 @@
+ FLAGS = -O2
+ OBJS =  XCounter.o XCounterData.o
+ INCLUDES = -I/usr/X11R6/include -I/usr/X11R6/share/include
+-
++BINDIR = /usr/bin
+ all:: clean XCounter
+ 
+ .c.o:
+@@ -20,7 +20,7 @@
+ 	rm -f *~
+ 
+ install:: XCounter
+-	install -s -g root -o root -m 755 XCounter /usr/local/bin/
++	install -s XCounter $(BINDIR)
+ 
+ uninstall:: XCounter
+ 	rm -f /usr/local/bin/XCounter
+Binary files XCounter-1.0.6/XCounter and XCounter-1.0.6-stare/XCounter differ
+Binary files XCounter-1.0.6/XCounter.o and XCounter-1.0.6-stare/XCounter.o differ
+Binary files XCounter-1.0.6/XCounterData.o and XCounter-1.0.6-stare/XCounterData.o differ
