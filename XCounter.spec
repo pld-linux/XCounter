@@ -33,12 +33,11 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 %{__make} install \
         BINDIR=$RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf INSTALL ChangeLog README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc INSTALL ChangeLog README
 %attr(755,root,root) %{_bindir}/*
