@@ -15,10 +15,7 @@ diff -ruN XCounter-1.0.6/Makefile XCounter-1.0.6-stare/Makefile
  
  install:: XCounter
 -	install -s -g root -o root -m 755 XCounter /usr/local/bin/
-+	install -s XCounter $(BINDIR)
++	install -D XCounter $(BINDIR)/XCounter
  
  uninstall:: XCounter
  	rm -f /usr/local/bin/XCounter
-Binary files XCounter-1.0.6/XCounter and XCounter-1.0.6-stare/XCounter differ
-Binary files XCounter-1.0.6/XCounter.o and XCounter-1.0.6-stare/XCounter.o differ
-Binary files XCounter-1.0.6/XCounterData.o and XCounter-1.0.6-stare/XCounterData.o differ
