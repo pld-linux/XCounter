@@ -6,6 +6,7 @@ Release:	1
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://isp.od.ua/~rsi/%{name}-%{version}.tar.gz
+# Source0-md5:	ad50093d6e588335bee5660716abc92f
 Patch0:		%{name}-make.patch
 URL:		http://members.fortunecity.com/mrsi/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
