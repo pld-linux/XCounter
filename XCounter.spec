@@ -28,12 +28,10 @@ obci±¿enie na wybranym interfejsie.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_bindir}
 
 %{__make} install \
         BINDIR=$RPM_BUILD_ROOT%{_bindir}
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
