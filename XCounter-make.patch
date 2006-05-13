@@ -19,3 +19,18 @@ diff -ruN XCounter-1.0.6/Makefile XCounter-1.0.6-stare/Makefile
  
  uninstall:: XCounter
  	rm -f /usr/local/bin/XCounter
+--- XCounter-1.0.6.orig/Makefile	2006-05-13 22:51:41.000000000 +0200
++++ XCounter-1.0.6/Makefile	2006-05-13 22:52:02.000000000 +0200
+@@ -7,10 +7,10 @@
+ all:: clean XCounter
+ 
+ .c.o:
+-	gcc $(INCLUDES) $(FLAGS) -c -Wall $< -o $*.o
++	$(CC) $(INCLUDES) $(FLAGS) -c -Wall $< -o $*.o
+ 
+ XCounter: $(OBJS)
+-	gcc $(FLAGS) -o XCounter $^ $(LIBDIR) $(LIBS)
++	$(CC) $(FLAGS) -o XCounter $^ $(LIBDIR) $(LIBS)
+ 
+ clean::
+ 	for i in $(OBJS) ; do \
