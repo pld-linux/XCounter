@@ -27,6 +27,7 @@ obci±¿enie na wybranym interfejsie.
 
 %build
 %{__make} \
+	CC="%{__cc}" \
 	FLAGS="%{rpmcflags}" \
 	LIBDIR="-L/usr/X11R6/%{_lib}"
 
