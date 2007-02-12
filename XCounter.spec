@@ -1,5 +1,5 @@
 Summary:	XCounter - simple traffic monitoring program
-Summary(pl):	XCounter - prosty analizator ruchu w sieci
+Summary(pl.UTF-8):   XCounter - prosty analizator ruchu w sieci
 Name:		XCounter
 Version:	1.0.6
 Release:	2
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 XCounter is simple monitoring program for Linux that displays
 information about IP traffic on a selected interface.
 
-%description -l pl
+%description -l pl.UTF-8
 XCounter jest prostym analizatorem ruchu w sieci dla Linuksa. Pokazuje
-obci±¿enie na wybranym interfejsie.
+obciÄ…Å¼enie na wybranym interfejsie.
 
 %prep
 %setup -q
