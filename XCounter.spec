@@ -1,5 +1,5 @@
 Summary:	XCounter - simple traffic monitoring program
-Summary(pl.UTF-8):   XCounter - prosty analizator ruchu w sieci
+Summary(pl.UTF-8):	XCounter - prosty analizator ruchu w sieci
 Name:		XCounter
 Version:	1.0.6
 Release:	2
